@@ -1,11 +1,19 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
+import AboutUsPage from "./pages/AboutUsPage";
+import HomePage from "./pages/HomePage";
 
 
 function App() {
   return (
-    <React.Fragment>
-      <h1>Initializing project...</h1>
-    </React.Fragment>
+    <Switch>
+      <Route path="/" exact>
+        <HomePage />
+      </Route>
+      <Route path="/om-oss" exact>
+        <AboutUsPage />
+      </Route>
+    </Switch>
   );
 }
 
