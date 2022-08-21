@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react'
-import MenuContent from '../components/Content/MenuContent'
+import AboutUsContent from '../components/Content/AboutUsContent'
 
 function AboutUsPage() {
     return (
         <Fragment>
-            <MenuContent />
+            <AboutUsContent />
         </Fragment>
     )
 }

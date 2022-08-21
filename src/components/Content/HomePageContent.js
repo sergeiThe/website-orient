@@ -1,5 +1,6 @@
 import React from 'react'
 import './HomePageContent.scss'
+import './../../scss/typography.scss'
 
 export default function HomePageContent() {
     return (
