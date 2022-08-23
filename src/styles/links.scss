@@ -1,0 +1,17 @@
+a {
+    color: $prim-color;
+    text-decoration: none;
+}
+
+button {
+    background-color: $sec-color;
+    background: linear-gradient(to right bottom, $sec-color, $tert-color);
+    border: none;
+    padding: 1.5rem 3rem;
+    border-radius: 5rem;
+    color: $prim-color;
+
+    font-size: 2rem;
+    font-family: $main-font;
+    font-weight: 300;
+}

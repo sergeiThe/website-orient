@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:wght@300;400;800&family=Open+Sans:wght@300;400;700&display=swap");
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Berkshire Swash', cursive;
+@import "./variables.scss";
+
+html {
+    font-size: 67.5%;
+}
+
+h1 {
+    font-family: $logo-font;
+    font-size: 5rem;
+    font-weight: 300;
+
+    margin: 0;
+}
+
+h2 {
+    font-family: $main-font;
+    font-size: 3rem;
+    font-weight: 300;
+
+    margin: 0;
+}
+
+h3 {
+    font-family: $main-font;
+    font-size: 2rem;
+    font-weight: 300;
+
+    margin: 0;
+}
+
+p,
+span,
+a {
+    font-family: $sec-font;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+
+    margin: 0;
+    // color: ;
+}
