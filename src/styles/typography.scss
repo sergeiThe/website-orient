@@ -3,14 +3,31 @@
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Berkshire Swash', cursive;
 @import "./variables.scss";
+@import "./mixins.scss";
 
 html {
-    font-size: 67.5%;
+    font-size: 62.5%;
+
+    @include respond(phone) {
+        font-size: 50%;
+    }
+
+    @include respond(port) {
+        font-size: 62.5%;
+    }
+
+    @include respond(desktop) {
+        font-size: 80%;
+    }
+
+    @include respond(big-desktop) {
+        font-size: 100%;
+    }
 }
 
 h1 {
     font-family: $logo-font;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 300;
 
     margin: 0;
@@ -18,7 +35,7 @@ h1 {
 
 h2 {
     font-family: $main-font;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 300;
 
     margin: 0;
@@ -26,7 +43,7 @@ h2 {
 
 h3 {
     font-family: $main-font;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 300;
 
     margin: 0;
@@ -34,7 +51,8 @@ h3 {
 
 p,
 span,
-a {
+a,
+div {
     font-family: $sec-font;
     font-size: 1.5rem;
     font-weight: 300;
