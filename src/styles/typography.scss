@@ -27,10 +27,12 @@ html {
 
 h1 {
     font-family: $logo-font;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 300;
 
     margin: 0;
+
+    color: $sec-color;
 }
 
 h2 {
@@ -59,5 +61,6 @@ div {
     line-height: 2.5rem;
 
     margin: 0;
-    // color: ;
+
+    color: $sec-color;
 }
