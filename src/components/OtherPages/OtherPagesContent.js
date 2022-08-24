@@ -7,6 +7,7 @@ import Contact from './Contact/Contact';
 import OpenHours from './OpenHours/OpenHours';
 import Services from './Services/Services';
 import PageNotFound from './404/PageNotFound';
+import Footer from './Footer/Footer';
 
 
 function OtherPagesContent() {
@@ -23,12 +24,12 @@ function OtherPagesContent() {
 
             <div className='other-pages-content-side'>
 
-                {pageCatCtx.pageCategory === pageCategories.about ? <About />
-                    : pageCatCtx.pageCategory === pageCategories.contact ? <Contact />
-                        : pageCatCtx.pageCategory === pageCategories.openHours ? <OpenHours />
-                            : pageCatCtx.pageCategory === pageCategories.services ? <Services />
-                                : <PageNotFound />
+                {pageCatCtx.pageCategory === pageCategories.contact ? <Contact />
+                    : pageCatCtx.pageCategory === pageCategories.openHours ? <OpenHours />
+                        : pageCatCtx.pageCategory === pageCategories.services ? <Services />
+                            : <About />
                 }
+
             </div>
 
             <Menu />

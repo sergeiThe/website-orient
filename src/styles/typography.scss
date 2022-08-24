@@ -13,15 +13,15 @@ html {
     }
 
     @include respond(port) {
-        font-size: 62.5%;
+        font-size: 50%;
     }
 
     @include respond(desktop) {
-        font-size: 80%;
+        font-size: 60%;
     }
 
     @include respond(big-desktop) {
-        font-size: 100%;
+        font-size: 70%;
     }
 }
 

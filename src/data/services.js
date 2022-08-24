@@ -104,7 +104,7 @@ const services = {
         }]
     }, {
         id: 'c3',
-        title: "Rygg-, nakke-, skuldre- og hodemassasje for to",
+        title: "Rygg-, nakke-, skuldre- og hodemassasje for 2",
         pricings: [{
             time: "50",
             price: "1400"

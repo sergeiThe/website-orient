@@ -1,0 +1,16 @@
+@import "./../../../styles/variables.scss";
+@import "./../../../styles/typography.scss";
+
+footer {
+    border-top: 1px solid $tert-color;
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: $tert-color;
+}

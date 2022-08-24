@@ -21,20 +21,20 @@ function Menu() {
                     <li><a href='/'>Book time</a></li>
                     <li><Link to={'/'}>Hjem</Link></li>
                     <li><button
-                        style={{ color: categoryContext.pageCategory === pageCategories.about ? 'red' : 'green' }}
-                        onClick={goToPageHandler(pageCategories.about)}
+                        style={{ color: categoryContext.pageCategory === pageCategories.about ? 'red' : 'black' }}
+                        onClick={() => goToPageHandler(pageCategories.about)}
                     >Om oss</button></li>
                     <li><button
-                        style={{ color: categoryContext.pageCategory === pageCategories.services ? 'red' : 'green' }}
-                        onClick={goToPageHandler(pageCategories.services)}
+                        style={{ color: categoryContext.pageCategory === pageCategories.services ? 'red' : 'black' }}
+                        onClick={() => goToPageHandler(pageCategories.services)}
                     >Tjenester</button></li>
                     <li><button
-                        style={{ color: categoryContext.pageCategory === pageCategories.contact ? 'red' : 'green' }}
-                        onClick={goToPageHandler(pageCategories.contact)}
+                        style={{ color: categoryContext.pageCategory === pageCategories.contact ? 'red' : 'black' }}
+                        onClick={() => goToPageHandler(pageCategories.contact)}
                     >Kontakt</button></li>
                     <li><button
-                        style={{ color: categoryContext.pageCategory === pageCategories.openHours ? 'red' : 'green' }}
-                        onClick={goToPageHandler(pageCategories.openHours)}
+                        style={{ color: categoryContext.pageCategory === pageCategories.openHours ? 'red' : 'black' }}
+                        onClick={() => goToPageHandler(pageCategories.openHours)}
                     >Åpningstimer</button></li>
 
                 </ul>

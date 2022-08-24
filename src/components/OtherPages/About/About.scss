@@ -1,0 +1,12 @@
+.about {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    box-sizing: border-box;
+
+    position: relative;
+
+    &-text {
+        padding-bottom: 2rem;
+    }
+}

@@ -48,8 +48,26 @@
 
     li {
         // color: black;
-        font-size: 2rem;
-        font-family: $main-font;
-        font-weight: 400;
+
+        a,
+        button {
+            font-size: 2rem;
+            font-family: $main-font;
+            font-weight: 400;
+
+            margin: 0;
+            padding: 0;
+
+            background: transparent;
+            border: none;
+
+            cursor: pointer;
+        }
+
+        transition: all 0.2s ease-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
