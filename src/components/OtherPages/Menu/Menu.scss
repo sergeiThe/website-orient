@@ -10,7 +10,7 @@
     height: $menu-height;
 
     background: linear-gradient(
-            to bottom,
+            to top,
             rgba(255, 192, 192, 0.808),
             rgb(255, 255, 255)
         ),
@@ -19,9 +19,9 @@
     background-size: cover;
     background-position: center center;
 
-    box-shadow: inset -2px 2px 1px 1px white, 0px 0px 3px 2px white;
+    box-shadow: inset -2px 2px 2px 2px white, 0px 0px 3px 2px white;
 
-    // border: 1px solid black;
+    // border: 3px solid rgb(231, 231, 231);
 
     border-top-right-radius: 15rem;
 

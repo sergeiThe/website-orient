@@ -9,7 +9,7 @@ export const pageCategories = {
 
 export const isHomePageContext = React.createContext({
     isHomePage: true,
-    changePageType: () => { }
+    changePageType: (isHomePage) => { }
 });
 
 
@@ -21,13 +21,16 @@ export const pageCategoryContext = React.createContext({
 export function usePageCategoryContext() {
     return useContext(pageCategoryContext);
 }
+export function useIsHomeContext() {
+    return useContext(isHomePageContext);
+}
 
 function ContextProvider(props) {
 
     const [isHomePage, setIsHomePage] = useState(true);
 
-    const changePageType = () => {
-        setIsHomePage(prevType => !prevType)
+    const changePageType = (isHomePage) => {
+        setIsHomePage(isHomePage)
     }
 
     const [pageCategory, setPageCategory] = useState('');
