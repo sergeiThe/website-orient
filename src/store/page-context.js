@@ -1,10 +1,10 @@
-import React, { useState } from "react"
+import React, { useContext, useState } from "react"
 
-const pageCategories = {
-    about: 'about',
-    services: 'services',
-    openHours: 'open hours',
-    contact: 'contact'
+export const pageCategories = {
+    about: 'om oss',
+    services: 'tjenester',
+    openHours: 'åpnigstider',
+    contact: 'kontakt',
 }
 
 export const isHomePageContext = React.createContext({
@@ -17,6 +17,10 @@ export const pageCategoryContext = React.createContext({
     pageCategory: pageCategories.about,
     changePageCategory: (page) => { }
 });
+
+export function usePageCategoryContext() {
+    return useContext(pageCategoryContext);
+}
 
 function ContextProvider(props) {
 

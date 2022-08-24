@@ -1,0 +1,55 @@
+@import "./../../../styles/variables.scss";
+@import "./../../../styles/typography.scss";
+
+.menu {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: $menu-width;
+    height: $menu-height;
+
+    background: linear-gradient(
+            to bottom,
+            rgba(255, 192, 192, 0.808),
+            rgb(255, 255, 255)
+        ),
+        url("./../../../resources/img/massage.jpg");
+
+    background-size: cover;
+    background-position: center center;
+
+    box-shadow: inset -2px 2px 1px 1px white, 0px 0px 3px 2px white;
+
+    // border: 1px solid black;
+
+    border-top-right-radius: 15rem;
+
+    display: flex;
+    justify-content: center;
+
+    nav {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        height: 70%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    li {
+        // color: black;
+        font-size: 2rem;
+        font-family: $main-font;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,45 @@
+@import "./../../styles/typography.scss";
+@import "./../../styles/variables.scss";
+
+.other-pages {
+    &-section {
+        background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.801),
+                rgba(2, 2, 2, 0.699)
+            ),
+            url("./../../resources/img/candle.jpg");
+
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+
+        .hat {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding-left: 3rem;
+            box-sizing: border-box;
+
+            width: $menu-width;
+            height: calc(100vh - $menu-height);
+
+            span {
+                font-family: $logo-font;
+                color: $sec-color;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &-content-side {
+        background-color: green;
+        width: calc(100% - $menu-width);
+        height: 100%;
+    }
+}
